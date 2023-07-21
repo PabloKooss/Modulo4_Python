@@ -1,10 +1,15 @@
 from menu import *
 import pwinput
+import sqlite3
 print("**********************\n* Juego de ahorcado  *\n**********************")
-usu=pwinput.pwinput(prompt='Usuario: ')
-contra=pwinput.pwinput(prompt='Contraseña: ')
 
-if usu=="usuario" and contra=="1234":
-    menu()   
-else:
-    print("\n\n------Datos incorrectos-----\n¡¡¡¡Buen dia!!!")
+while 0 <= (opcion= int(input('Elige una opción\nIngresar ---> 1\nRegustrar nuevo usuario ---> 2\nSalir ---> S'))) <= 3:
+    Match opcion:
+        case 1:
+            verificar()
+        case 2:
+            registrar()
+        case 3:
+            print("Buen día")
+            break
+print("Opcion invalida")
