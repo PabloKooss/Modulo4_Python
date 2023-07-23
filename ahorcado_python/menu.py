@@ -1,4 +1,4 @@
-from niveles.nivel1 import juego_n1
+from niveles.nivel1 import jugar_N1
 from niveles.nivel2 import juego_n2
 from niveles.nivel3 import juego_n3
 from niveles.nivel4 import juego_n4
@@ -10,7 +10,7 @@ def menu():
         
     match opcion:
         case 1:
-            juego_n1()
+            jugar_N1()
             
         case 2:
             juego_n2()

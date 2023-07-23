@@ -18,6 +18,7 @@ def verificar_login(nombre_usuario, contraseña):
 
     # Verificar si se encontró el usuario y si la contraseña coincide
     if usuario is not None and usuario[2] == contraseña:
+        datos_usuario=nombre_usuario
         return True
     else:
         return False
